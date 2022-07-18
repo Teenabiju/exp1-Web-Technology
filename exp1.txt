@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Resume</title>
+</head>
+
+<body>
+
+<img align="right"src="https://icon-library.com/images/female-profile-icon/female-profile-icon-10.jpg" jsaction="load:XAeZkd;" jsname="HiaYvf" class="n3VNCb KAlRDb" alt="Female Profile Icon #309542 - Free Icons Library" data-noaft="1" style="width:100px;height:100px; margin: 0px;">
+<h1><center> My Resume Page</center></h1>
+<p><b>Teena P Biju<br>House no.121<br>Pooja Nagar<br>Kerala-641042<br>Ph:9598213256<br>Email:tena@gmail.com</p></b>
+ &nbsp &nbsp &nbsp <a href="url">Visit My Website</a>&nbsp &nbsp &nbsp <a href="url">skills</a>&nbsp &nbsp &nbsp <a href="url">My College</a> &nbsp &nbsp &nbsp<a href="url">Email Me</a>&nbsp &nbsp &nbsp <a href="url">Call Me</a><img data-ils="4" jsaction="rcuQ6b:trigger.M8vzZb;" class="rg_i Q4LuWd" jsname="Q4LuWd" width="90" heght="90" alt="FacebookLogo and symbol, meaning, history, PNG" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjKYmBc3E7ztL3FwPPn8kC1JDw0kMjGyPoJA&amp;usqp=CAU"><img src="https://brandpalettes.com/wp-content/uploads/2018/10/Linkedin-Logo.png" jsaction="load:XAeZkd;" jsname="HiaYvf" class="n3VNCb KAlRDb" alt="LinkedIn Color Codes - HTML Hex, RGB and CMYK Color Codes" data-noaft="1" style="width:80px;height;90px;margin: 68.559px 0px;"></p>
+<br>
+<br>
+<hr>
+<h1>Career object</h1>
+<p>A Career Objective or a Resume Objective is essentially a heading statement that describes your professional goals in two to three sentences.Employers looking to hire an employee for a position tend to seek candidates that are driven enough to understand what they want. Whether you are starting off or set on a particular dream job, it is extremely essential to design an effective objective to stand out.
+<br>
+<br>
+<hr>
+<h1>Academic Profile</h1>
+<table border="1" style="border-collapse: collapse; text-align: center">
+      <tr>
+        <th></th>
+        <th>School/College</th>
+        <th>Board/University</th>
+        <th>Percentage of Marks</th>
+        <th>Year of Passing</th>
+      </tr>
+      <tr>
+        <td>Btech</td>
+        <td>Karunya</td>
+        <td>University</td>
+        <td>98%</td>
+        <td>2024</td>
+      </tr>
+      <tr>
+        <td>HSLC</td>
+        <td>St.Thomas</td>
+        <td>State</td>
+        <td>90%</td>
+        <td>2021</td>
+      </tr>
+      <tr>
+        <td>SSLC</td>
+        <td>St.Thomas</td>
+        <td>State</td>
+        <td>80%</td>
+        <td>2019</td>
+      </tr>
+    </table>
+<br>    
+<hr>
+
+<h1>Technical skills</h1>
+<ul style="list-style-type:numbers">
+<li>Data Structures</li>
+<li>Web Technology</li>
+<li>Python</li>
+<li>Java</li>
+</ul>
+<hr>
+
+<h1>Advanced Technology Skills</h1>
+<ul style="list-style-type:circle">
+<li>Data Science</li>
+<li>Data Analytics</li>
+<li>Machine Learning Principles</li>
+</ul>
+<br>
+<hr>
+
+<h1>Advanced Technology Skills</h1>
+<p><b>Infosys</p></b>
+<dd>Write about the internship</dd>
+<br>
+
+<p><b>Microsoft</p></b>
+<dd>Write about the internship</dd>
+<br>
+
+<p><b>Microsoft</p></b>
+<dd>Write about the internship</dd>
+<br>
+
+<p><b>CISCO</p></b>
+<dd>Write about the internship</dd>
+<br>
+
+<p><b>Oracle</p></b>
+<dd>Write about the internship</dd>
+<br>
+<hr>
+
+<h1>PHOTO GALLAERY</h1>
+<img src="https://media.istockphoto.com/photos/cups-of-coffee-picture-id483062226?k=20&amp;m=483062226&amp;s=612x612&amp;w=0&amp;h=fDRHhxhQj8Cak3Q2jZbXQxRzU9otvksRG7V_qXdW6VQ=" jsaction="load:XAeZkd;" jsname="HiaYvf" class="n3VNCb KAlRDb" alt="7,873 Three Coffee Mugs Stock Photos, Pictures &amp; Royalty-Free Images -  iStock" data-noaft="1" style="width: 383px; height: 255.333px; margin: 4.33333px 0px;"><img data-ils="4" jsaction="rcuQ6b:trigger.M8vzZb;" class="rg_i Q4LuWd" jsname="Q4LuWd" width="290" height="174" alt="Free Stock Photo of Flat lay of a laptop and hands holding a coffee mug |  Download Free Images and Free Illustrations" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSt2eROBKU0yWHYfBcbyWsnDRt_cn7fdR6xmQ&amp;usqp=CAU">
+<br>
+<br>
+<br>
+
+<a href="url">Career Objective</a>&nbsp &nbsp &nbsp &nbsp <a href="url">Technical Skills</a> &nbsp &nbsp &nbsp &nbsp <a href="url">Education </a>&nbsp &nbsp &nbsp &nbsp <a href="url"> Advanced Technology Skills</a>&nbsp &nbsp &nbsp &nbsp </a>&nbsp &nbsp &nbsp &nbsp <a href="url">Internships</a>
+<br>
+<hr>
+</body>
+</html>
