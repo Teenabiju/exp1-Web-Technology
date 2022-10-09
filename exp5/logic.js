@@ -34,7 +34,7 @@ function bmi() {
 
 function fruit() {
  const idx = Math.floor(Math.random() * 2);
- const img = ["https://ychef.files.bbci.co.uk/1600x900/p07v2wjn.webp", "https://xzdl43v0mdf2m45tz2aj7kkv35-wpengine.netdna-ssl.com/wp-content/uploads/2010/10/orange.jpg"]
+ const img = ["https://images.pexels.com/photos/2487443/pexels-photo-2487443.jpeg?cs=srgb&dl=pexels-matheus-cenali-2487443.jpg&fm=jpg", "https://cdn.britannica.com/24/174524-050-A851D3F2/Oranges.jpg"]
  const w = document.getElementById("width").value;
  document.getElementById("garden").innerHTML = "<img src=" + img[idx] + " height=" + h + " width=" + w + ">"
 
