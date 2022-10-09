@@ -72,7 +72,7 @@ function flip() {
 
 function cake() {
  const type = document.getElementById("cake").value;
- const tip = parseInt(document.getElementById("tip").value)
+ const tip = parseInt(document.getElementById("tip").value);
  const tax = 9;
  let tcost, taxcost, total;
  if (type == "Small") {
