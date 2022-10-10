@@ -1,153 +1,165 @@
-<!DOCTYPE html>
+* {
 
-<html lang="en">
+    margin: 0;
 
- 
+    padding: 0;
 
-<head>
+    background-color: #d899a7;
 
-    <meta charset="UTF-8">
-
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Document</title>
+}
 
  
 
-    <link rel="stylesheet" href="style.css">
+nav ul {
+
+    display: flex;
+
+    justify-content: space-around;
+
+}
 
  
 
-</head>
+nav ul li {
+
+    list-style-type: none;
+
+    padding: 1rem 2rem;
+
+    width: 20%;
+
+    text-align: center;
+
+    background-color: rgb(27, 192, 49);
+
+    border: solid white;
+
+}
 
  
 
-<body>
+nav ul li a {
 
-    <nav>
+    text-decoration: none;
 
-        <ul>
+    color: white;
 
-            <li><a href="#">URK20CS2025</a></li>
+    background-color: black;
 
-            <li><a href="#ques-1">Question 1</a></li>
-
-            <li><a href="#ques-2">Question 2</a></li>
-
-            <li><a href="#ques-3">Question 3</a></li>
-
-            <li><a href="#ques-4">Question 4</a></li>
-
-            <li><a href="#ques-5">Question 5</a></li>
-
-        </ul>
-
-    </nav>
-
-    <section>
-
-        <div id="ques-1">
-
-            <h1>Digital Clock</h1>
-
-            <div id="time" class="time-box"></div>
-
-            <button onclick="start()">Start</button>
-
-        </div>
-
-    </section>
+}
 
  
 
-    <section>
+section {
 
-        <div id="ques-2">
+    margin: 30px 10px;
 
-            <h1>Changing Colors</h1>
+    padding: 20px 10px;
 
-            <div class="dynamic_bg" onload="color_ch()"></div>
-
-        </div>
-
-    </section>
+}
 
  
 
-    <section>
+h1 {
 
-        <div id="ques-3">
+    margin-bottom: 10px;
 
-            <h1>Changing Font Size</h1>
-
-            <p id="para1" onmouseover="incSize()" onmouseout="decSize()">move cursor over me to zoom in...</p>
-
-        </div>
-
-    </section>
+}
 
  
 
-    <section>
+button {
 
-        <div id="ques-4">
+    padding: 5px 20px;
 
-            <h1>Move Car</h1>
+    margin-top: 20px;
 
-            <div class="box">
+    margin-bottom: 20px;
 
-                <img src="images/road.jpg" class="road-img" id="r-img">
+    margin-right: 20px;
 
-                <img src="images/car1.png" class="car-img" id="c-img">
-
-            </div>
-
-            <!-- method1 -->
-
-            <button onclick="init(); moveRight();">Move</button>
-
-            <button onclick="stop()">Stop</button>
+}
 
  
 
-            <!-- method2 -->
+.time-box {
 
-            <!-- <button onclick="start()">Start</button>
+    text-align: center;
 
-            <button onclick="moveRight();">Move</button>
+    width: 500px;
 
-            <button onclick="stop()">Stop</button> -->
+    height: 200px;
 
-        </div>
+    display: flex;
 
-    </section>
+    justify-content: center;
 
- 
+    align-items: center;
 
-    <section>
+    align-self: center;
 
-        <div id="ques-5">
+    color: #a2d2ff;
 
-            <h1>Student Details</h1>
+    background-color: rgb(207, 74, 103);
 
-            <button onclick="student()">Show Student Details</button>
+    border-radius: 30px;
 
-            <span id="stu1" class="stud"></span>
+    margin: 20px 0;
 
-            <span id="stu2" class="stud"></span>
+    padding-left: 20px;
 
-        </div>
+    padding-right: 10px;
 
-    </section>
+    font-size: 40px;
 
- 
-
-    <script src="mylogic.js"></script>
-
-</body>
+}
 
  
 
-</html>
+.dynamic_bg {
+
+    height: 300px;
+
+    width: 300px;
+
+}
+
+ 
+
+.box {
+
+    position: relative;
+
+}
+
+ 
+
+.road-img {
+
+    height: 400px;
+
+    width: 100%;
+
+}
+
+ 
+
+.car-img {
+
+    position: absolute;
+
+    left: 0;
+
+    bottom: 50px;
+
+    width: 200px;
+
+}
+
+ 
+
+.stud {
+
+    font-size: 30px;
+
+}
