@@ -117,23 +117,14 @@ function stop() {
 // method2
 
 /*function start() {
-
     imgobj = document.getElementById('c-img');
-
     imgobj.style.left = '0px';
-
 }
-
 function moveRight(){
-
     imgobj.style.left = parseInt(imgobj.style.left) + 10 + 'px';
-
 }
-
 function stop(){
-
     imgobj.style.left = '0px';
-
 }*/
 
 
