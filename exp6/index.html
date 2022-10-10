@@ -1,165 +1,601 @@
-* {
+<!DOCTYPE html>
 
-    margin: 0;
-
-    padding: 0;
-
-    background-color: #d899a7;
-
-}
+<html lang="en">
 
  
 
-nav ul {
+<head>
 
-    display: flex;
+    <meta charset="UTF-8">
 
-    justify-content: space-around;
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-}
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
- 
-
-nav ul li {
-
-    list-style-type: none;
-
-    padding: 1rem 2rem;
-
-    width: 20%;
-
-    text-align: center;
-
-    background-color: rgb(27, 192, 49);
-
-    border: solid white;
-
-}
+    <title>Document</title>
 
  
 
-nav ul li a {
-
-    text-decoration: none;
-
-    color: white;
-
-    background-color: black;
-
-}
+    <link rel="stylesheet" href="style.css">
 
  
 
-section {
-
-    margin: 30px 10px;
-
-    padding: 20px 10px;
-
-}
+</head>
 
  
 
-h1 {
+<body>
 
-    margin-bottom: 10px;
+    <nav>
 
-}
+        <ul>
 
- 
+            <li><a href="#">URK20CS2025</a></li>
 
-button {
+            <li><a href="#ques-1">Question 1</a></li>
 
-    padding: 5px 20px;
+            <li><a href="#ques-2">Question 2</a></li>
 
-    margin-top: 20px;
+            <li><a href="#ques-3">Question 3</a></li>
 
-    margin-bottom: 20px;
+            <li><a href="#ques-4">Question 4</a></li>
 
-    margin-right: 20px;
+            <li><a href="#ques-5">Question 5</a></li>
 
-}
+        </ul>
 
- 
+    </nav>
 
-.time-box {
+    <section>
 
-    text-align: center;
+        <div id="ques-1">
 
-    width: 500px;
+            <h1>Digital Clock</h1>
 
-    height: 200px;
+            <div id="time" class="time-box"></div>
 
-    display: flex;
+            <button onclick="start()">Start</button>
 
-    justify-content: center;
+        </div>
 
-    align-items: center;
-
-    align-self: center;
-
-    color: #a2d2ff;
-
-    background-color: rgb(207, 74, 103);
-
-    border-radius: 30px;
-
-    margin: 20px 0;
-
-    padding-left: 20px;
-
-    padding-right: 10px;
-
-    font-size: 40px;
-
-}
+    </section>
 
  
 
-.dynamic_bg {
+    <section>
 
-    height: 300px;
+        <div id="ques-2">
 
-    width: 300px;
+            <h1>Changing Colors</h1>
 
-}
+            <div class="dynamic_bg" onload="color_ch()"></div>
 
- 
+        </div>
 
-.box {
-
-    position: relative;
-
-}
+    </section>
 
  
 
-.road-img {
+    <section>
 
-    height: 400px;
+        <div id="ques-3">
 
-    width: 100%;
+            <h1>Changing Font Size</h1>
 
-}
+            <p id="para1" onmouseover="incSize()" onmouseout="decSize()">move cursor over me to zoom in...</p>
 
- 
+        </div>
 
-.car-img {
-
-    position: absolute;
-
-    left: 0;
-
-    bottom: 50px;
-
-    width: 200px;
-
-}
+    </section>
 
  
 
-.stud {
+    <section>
 
-    font-size: 30px;
+        <div id="ques-4">
 
-}
+            <h1>Move Car</h1>
+
+            <div class="box">
+
+                <img src="https://media.istockphoto.com/vectors/straight-empty-road-through-the-countryside-green-hills-blue-sky-and-vector-id1161948652?k=20&m=1161948652&s=612x612&w=0&h=aYwLStFq8jKf0yKZWUaBY7kYMhOFiGiMNpUDh5brIqk=" class="road-img" id="r-img">
+
+                <img src="https://www.pngitem.com/pimgs/m/45-459093_clipart-car-clipart-transparent-background-hd-png-download.png" class="car-img" id="c-img">
+
+            </div>
+
+            <!-- method1 -->
+
+            <button onclick="init(); moveRight();">Move</button>
+
+            <button onclick="stop()">Stop</button>
+
+ 
+
+            <!-- method2 -->
+
+            <!-- <button onclick="start()">Start</button>
+            <button onclick="moveRight();">Move</button>
+            <button onclick="stop()">Stop</button> -->
+
+        </div>
+
+    </section>
+
+ 
+
+    <section>
+
+        <div id="ques-5">
+
+            <h1>Student Details</h1>
+
+            <button onclick="student()">Show Student Details</button>
+
+            <span id="stu1" class="stud"></span>
+
+            <span id="stu2" class="stud"></span>
+
+        </div>
+
+    </section>
+
+ 
+
+    <script src="mylogic.js"></script>
+
+</body>
+
+ 
+
+</html><!DOCTYPE html>
+
+<html lang="en">
+
+ 
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+
+ 
+
+    <link rel="stylesheet" href="style.css">
+
+ 
+
+</head>
+
+ 
+
+<body>
+
+    <nav>
+
+        <ul>
+
+            <li><a href="#">URK20CS2025</a></li>
+
+            <li><a href="#ques-1">Question 1</a></li>
+
+            <li><a href="#ques-2">Question 2</a></li>
+
+            <li><a href="#ques-3">Question 3</a></li>
+
+            <li><a href="#ques-4">Question 4</a></li>
+
+            <li><a href="#ques-5">Question 5</a></li>
+
+        </ul>
+
+    </nav>
+
+    <section>
+
+        <div id="ques-1">
+
+            <h1>Digital Clock</h1>
+
+            <div id="time" class="time-box"></div>
+
+            <button onclick="start()">Start</button>
+
+        </div>
+
+    </section>
+
+ 
+
+    <section>
+
+        <div id="ques-2">
+
+            <h1>Changing Colors</h1>
+
+            <div class="dynamic_bg" onload="color_ch()"></div>
+
+        </div>
+
+    </section>
+
+ 
+
+    <section>
+
+        <div id="ques-3">
+
+            <h1>Changing Font Size</h1>
+
+            <p id="para1" onmouseover="incSize()" onmouseout="decSize()">move cursor over me to zoom in...</p>
+
+        </div>
+
+    </section>
+
+ 
+
+    <section>
+
+        <div id="ques-4">
+
+            <h1>Move Car</h1>
+
+            <div class="box">
+
+                <img src="https://media.istockphoto.com/vectors/straight-empty-road-through-the-countryside-green-hills-blue-sky-and-vector-id1161948652?k=20&m=1161948652&s=612x612&w=0&h=aYwLStFq8jKf0yKZWUaBY7kYMhOFiGiMNpUDh5brIqk=" class="road-img" id="r-img">
+
+                <img src="https://www.pngitem.com/pimgs/m/45-459093_clipart-car-clipart-transparent-background-hd-png-download.png" class="car-img" id="c-img">
+
+            </div>
+
+            <!-- method1 -->
+
+            <button onclick="init(); moveRight();">Move</button>
+
+            <button onclick="stop()">Stop</button>
+
+ 
+
+            <!-- method2 -->
+
+            <!-- <button onclick="start()">Start</button>
+            <button onclick="moveRight();">Move</button>
+            <button onclick="stop()">Stop</button> -->
+
+        </div>
+
+    </section>
+
+ 
+
+    <section>
+
+        <div id="ques-5">
+
+            <h1>Student Details</h1>
+
+            <button onclick="student()">Show Student Details</button>
+
+            <span id="stu1" class="stud"></span>
+
+            <span id="stu2" class="stud"></span>
+
+        </div>
+
+    </section>
+
+ 
+
+    <script src="mylogic.js"></script>
+
+</body>
+
+ 
+
+</html><!DOCTYPE html>
+
+<html lang="en">
+
+ 
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+
+ 
+
+    <link rel="stylesheet" href="style.css">
+
+ 
+
+</head>
+
+ 
+
+<body>
+
+    <nav>
+
+        <ul>
+
+            <li><a href="#">URK20CS2025</a></li>
+
+            <li><a href="#ques-1">Question 1</a></li>
+
+            <li><a href="#ques-2">Question 2</a></li>
+
+            <li><a href="#ques-3">Question 3</a></li>
+
+            <li><a href="#ques-4">Question 4</a></li>
+
+            <li><a href="#ques-5">Question 5</a></li>
+
+        </ul>
+
+    </nav>
+
+    <section>
+
+        <div id="ques-1">
+
+            <h1>Digital Clock</h1>
+
+            <div id="time" class="time-box"></div>
+
+            <button onclick="start()">Start</button>
+
+        </div>
+
+    </section>
+
+ 
+
+    <section>
+
+        <div id="ques-2">
+
+            <h1>Changing Colors</h1>
+
+            <div class="dynamic_bg" onload="color_ch()"></div>
+
+        </div>
+
+    </section>
+
+ 
+
+    <section>
+
+        <div id="ques-3">
+
+            <h1>Changing Font Size</h1>
+
+            <p id="para1" onmouseover="incSize()" onmouseout="decSize()">move cursor over me to zoom in...</p>
+
+        </div>
+
+    </section>
+
+ 
+
+    <section>
+
+        <div id="ques-4">
+
+            <h1>Move Car</h1>
+
+            <div class="box">
+
+                <img src="https://media.istockphoto.com/vectors/straight-empty-road-through-the-countryside-green-hills-blue-sky-and-vector-id1161948652?k=20&m=1161948652&s=612x612&w=0&h=aYwLStFq8jKf0yKZWUaBY7kYMhOFiGiMNpUDh5brIqk=" class="road-img" id="r-img">
+
+                <img src="https://www.pngitem.com/pimgs/m/45-459093_clipart-car-clipart-transparent-background-hd-png-download.png" class="car-img" id="c-img">
+
+            </div>
+
+            <!-- method1 -->
+
+            <button onclick="init(); moveRight();">Move</button>
+
+            <button onclick="stop()">Stop</button>
+
+ 
+
+            <!-- method2 -->
+
+            <!-- <button onclick="start()">Start</button>
+            <button onclick="moveRight();">Move</button>
+            <button onclick="stop()">Stop</button> -->
+
+        </div>
+
+    </section>
+
+ 
+
+    <section>
+
+        <div id="ques-5">
+
+            <h1>Student Details</h1>
+
+            <button onclick="student()">Show Student Details</button>
+
+            <span id="stu1" class="stud"></span>
+
+            <span id="stu2" class="stud"></span>
+
+        </div>
+
+    </section>
+
+ 
+
+    <script src="mylogic.js"></script>
+
+</body>
+
+ 
+
+</html><!DOCTYPE html>
+
+<html lang="en">
+
+ 
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+
+ 
+
+    <link rel="stylesheet" href="style.css">
+
+ 
+
+</head>
+
+ 
+
+<body>
+
+    <nav>
+
+        <ul>
+
+            <li><a href="#">URK20CS2025</a></li>
+
+            <li><a href="#ques-1">Question 1</a></li>
+
+            <li><a href="#ques-2">Question 2</a></li>
+
+            <li><a href="#ques-3">Question 3</a></li>
+
+            <li><a href="#ques-4">Question 4</a></li>
+
+            <li><a href="#ques-5">Question 5</a></li>
+
+        </ul>
+
+    </nav>
+
+    <section>
+
+        <div id="ques-1">
+
+            <h1>Digital Clock</h1>
+
+            <div id="time" class="time-box"></div>
+
+            <button onclick="start()">Start</button>
+
+        </div>
+
+    </section>
+
+ 
+
+    <section>
+
+        <div id="ques-2">
+
+            <h1>Changing Colors</h1>
+
+            <div class="dynamic_bg" onload="color_ch()"></div>
+
+        </div>
+
+    </section>
+
+ 
+
+    <section>
+
+        <div id="ques-3">
+
+            <h1>Changing Font Size</h1>
+
+            <p id="para1" onmouseover="incSize()" onmouseout="decSize()">move cursor over me to zoom in...</p>
+
+        </div>
+
+    </section>
+
+ 
+
+    <section>
+
+        <div id="ques-4">
+
+            <h1>Move Car</h1>
+
+            <div class="box">
+
+                <img src="https://media.istockphoto.com/vectors/straight-empty-road-through-the-countryside-green-hills-blue-sky-and-vector-id1161948652?k=20&m=1161948652&s=612x612&w=0&h=aYwLStFq8jKf0yKZWUaBY7kYMhOFiGiMNpUDh5brIqk=" class="road-img" id="r-img">
+
+                <img src="https://www.pngitem.com/pimgs/m/45-459093_clipart-car-clipart-transparent-background-hd-png-download.png" class="car-img" id="c-img">
+
+            </div>
+
+            <!-- method1 -->
+
+            <button onclick="init(); moveRight();">Move</button>
+
+            <button onclick="stop()">Stop</button>
+
+ 
+
+            <!-- method2 -->
+
+            <!-- <button onclick="start()">Start</button>
+            <button onclick="moveRight();">Move</button>
+            <button onclick="stop()">Stop</button> -->
+
+        </div>
+
+    </section>
+
+ 
+
+    <section>
+
+        <div id="ques-5">
+
+            <h1>Student Details</h1>
+
+            <button onclick="student()">Show Student Details</button>
+
+            <span id="stu1" class="stud"></span>
+
+            <span id="stu2" class="stud"></span>
+
+        </div>
+
+    </section>
+
+ 
+
+    <script src="mylogic.js"></script>
+
+</body>
+
+ 
+
+</html>
