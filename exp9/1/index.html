@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+
+    <style>
+        .megaplay{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 10rem 0 0 0;
+        }
+        span{
+            color: lightslategrey;
+        }
+    </style>
+
+    <script>
+        function show(){
+            alert("Your form is submitted!")
+        }
+        var app = angular.module("myapp",[]);
+        app.controller("mycontrol",function($scope){
+
+        })
+    </script>
+</head>
+<body ng-app="myapp" ng-controller="mycontrol">
+    <div class="megaplay">
+        <h1>2022 Christmas Megaplay registration form</h1>
+        <form action="" name="myform">
+            <table>
+                <tr>
+                    <td>Name:</td>
+                    <td>
+                        <input type="text" name="username" ng-model="username" required>
+                        <span style="color:red" ng-show="myform.username.$error.required">Your name is required</span>
+                    </td>
+                    
+                </tr>
+                <tr>
+                    <td>Register Number:</td>
+                    <td>
+                        <input type="text" name="userreg" ng-model="userreg" required>
+                        <span style="color:red" ng-show="myform.userreg.$error.required">Your Register Number is required</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Year Of Study</td>
+                    <td>
+                        <input type="date" name="useryear" ng-model="useryear" required>
+                        <span style="color:red" ng-show="myform.useryear.$error.required">Your Year Of Study is required</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Department:</td>
+                    <td>
+                        <select id="" name="userdept" ng-model="userdept" required>
+                            <option value="CSE">CSE</option>
+                            <option value="ECE">ECE</option>
+                            <option value="Mech">Mech</option>
+                            <option value="Civil">Civil</option>
+                            <option value="Biotech">Biotech</option>
+                        </select>
+                        <span style="color: red;" ng-show="myform.userdept.$error.required">Department is required</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>School:</td>
+                    <td>
+                        <select name="userschool" ng-model="userschool" required>
+                            <option value="BTech">BTech</option>
+                            <option value="MTech">MTech</option>
+                            <option value="BSc">BSc</option>
+                            <option value="Phd">Phd</option>
+                        </select>
+                        <span style="color: red;" ng-show="myform.userschool.$error.required">School is required</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Type Of Event</td>
+                    <td>
+                        <input type="radio" id="musician" name="event" value="musician" ng-model="event" required>
+                        <label for="musician">Musician</label><br>
+                        <input type="radio" id="singing" name="event" value="singing" ng-model="event" required>
+                        <label for="singing">Singing</label><br>
+                        <input type="radio" id="choreography" name="event" value="choreography" ng-model="event" required>
+                        <label for="choreography">Choreography</label><br>
+                        <input type="radio" id="backstage" name="event" value="backstage" ng-model="event" required>
+                        <label for="backstage">Backstage</label><br>
+                        <input type="radio" id="finance" name="event" value="finance" ng-model="event" required>
+                        <label for="finance">Finance</label><br>
+                        <input type="radio" id="purchase" name="event" value="purchase" ng-model="event" required>
+                        <label for="purchase">Purchase</label><br>
+                        <input type="radio" id="volunteer" name="event" value="volunteer" ng-model="event" required>
+                        <label for="volunteer">Volunteer</label><br>
+
+                        <span style="color: red;" ng-show="myform.event.$error.required">Gender is required</span>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><button onclick="show()">Submit</button></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+</html>

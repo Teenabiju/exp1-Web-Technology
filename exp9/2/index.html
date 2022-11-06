@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Angular JS - Student Dashboard</title>
+
+    <!-- Angular JS CDN  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.8.3/angular.min.js"
+        integrity="sha512-KZmyTq3PLx9EZl0RHShHQuXtrvdJ+m35tuOiwlcZfs/rE7NZv29ygNA8SFCkMXTnYZQK2OX0Gm2qKGfvWEtRXA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- Angular route CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-route/1.8.3/angular-route.min.js"
+        integrity="sha512-y1qD3hz/IAf8W4+/UMLZ+CN6LIoUGi7srWJ3r1R17Hid8x0yXe+1B5ZelkaL1Mjzedzu0Cg3HBvDG02SAgSzBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+<body ng-app="myApp">
+
+    <p><a href="#/!">Home</a></p>
+    <a href="#!student1">Student 1</a>
+    <a href="#!student2">Student 2</a>
+    <a href="#!student3">Student 3</a>
+    <a href="#!student4">Student 4</a>
+    <a href="#!student5">Student 5</a>
+
+    <div ng-view></div>
+
+    <script type="text/javascript">
+        var app = angular.module("myApp", ["ngRoute"]);
+
+        app.config(function ($routeProvider) {
+            $routeProvider
+                .when("/", {
+                    templateUrl: "main.htm"
+                })
+                .when("/student1", {
+                    templateUrl: "student1.htm"
+                })
+                .when("/student2", {
+                    templateUrl: "student2.htm"
+                })
+                .when("/student3", {
+                    templateUrl: "student3.htm"
+                })
+                .when("/student4", {
+                    templateUrl: "student4.htm"
+                })
+                .when("/student5", {
+                    templateUrl: "student5.htm"
+                });
+        });
+    </script>
+</body>
+
+</html>
